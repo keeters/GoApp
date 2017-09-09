@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "391990673944",
+    "firebase_url": "https://hbogo-1d39a.firebaseio.com",
+    "project_id": "hbogo-1d39a",
+    "storage_bucket": "hbogo-1d39a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391990673944:android:42d2284b07c61ada",
+        "android_client_info": {
+          "package_name": "s.hbogo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391990673944-t445qo75qkla5jk2b448571a9ab4ge9t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpTlaxB0EY9WFA0tuna0A2tFywq8P-0mg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

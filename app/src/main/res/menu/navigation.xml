@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tabMyRides"
+        android:icon="@drawable/ic_action_wheel"
+        android:title="MyRides" />
+
+    <item
+        android:id="@+id/tabMessage"
+        android:icon="@drawable/ic_message"
+        android:title="Messages" />
+
+    <item
+        android:id="@+id/tabSearch"
+        android:icon="@drawable/ic_action_search"
+        android:title="Search" />
+
+    <item
+        android:id="@+id/tabProfile"
+        android:icon="@drawable/ic_person"
+        android:title="@string/title_profile" />
+
+</menu>
