@@ -20,13 +20,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainMenu"
-            android:label="@string/title_activity_main_menu" />
+
         <activity android:name=".RegisterActivity" />
         <activity
-            android:name=".maintabs.MainActivity"
-            android:label="@string/title_activity_main"
+            android:name=".maintabs.Messages"
+            android:label="@string/title_activity_messages"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".maintabs.MyRides"
@@ -37,13 +35,9 @@
             android:label="@string/title_activity_search"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".maintabs.Messages"
-            android:label="@string/title_activity_messages"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".maintabs.Profile"
             android:label="@string/title_activity_profile"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
