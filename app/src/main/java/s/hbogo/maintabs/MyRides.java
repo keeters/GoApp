@@ -15,7 +15,7 @@ import s.hbogo.R;
 
 public class MyRides extends AppCompatActivity {
     /*
-    This is where Rides will go (also hopefully the startscreen
+    This is where Rides will go.  Probably be best to use 2 view fragments, one for riders and one for drivers
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
