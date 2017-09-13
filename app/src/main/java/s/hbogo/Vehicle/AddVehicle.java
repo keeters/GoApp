@@ -77,7 +77,6 @@ public class AddVehicle extends AppCompatActivity {
 
         FirebaseUser user = firebaseAuth.getCurrentUser();
 
-
         String stCarMake  = etCarMake.getText().toString().trim();
         String stCarModel  = etCarModel.getText().toString().trim();
         String stCarYear  = etCarYear.getText().toString().trim();

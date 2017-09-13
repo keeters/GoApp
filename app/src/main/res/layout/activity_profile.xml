@@ -48,6 +48,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Add Vehicle" />
+
+            <TextView
+                android:id="@+id/tvEditBio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tell a littlebit about yourself" />
+
+            <TextView
+                android:id="@+id/tvBio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Bio Yet"/>
+
         </LinearLayout>
 
         <android.support.design.widget.BottomNavigationView

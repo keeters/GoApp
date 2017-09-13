@@ -22,7 +22,7 @@ What an individual trip will look like.  This will make it easy to upload into F
 
     Date date;
 
-    Short rideType; //make sure to make 2 final static shorts in the make a ride thing
+    public Short rideType; //make sure to make 2 final static shorts in the make a ride thing
 
 
     public Trip(Location start, Location destination, Integer seats, Integer bags, Date date, Short rideType) {

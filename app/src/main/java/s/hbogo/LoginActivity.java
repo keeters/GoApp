@@ -40,11 +40,8 @@ Shockingly, this is the login activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-
         tvRegister = (TextView) findViewById(R.id.tvRegister);
-
         btnLogin = (Button) findViewById(R.id.btnLogin);
-
         etEmail = (EditText) findViewById(R.id.etEmail);
         etPassword = (EditText) findViewById(R.id.etPassword);
 

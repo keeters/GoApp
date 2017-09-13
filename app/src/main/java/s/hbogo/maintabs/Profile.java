@@ -23,6 +23,7 @@ import com.google.firebase.storage.UploadTask;
 
 import s.hbogo.R;
 import s.hbogo.Vehicle.AddVehicle;
+import s.hbogo.userinformation.EditBio;
 
 import static android.R.attr.data;
 import static android.R.id.content;
@@ -35,6 +36,8 @@ This is where the profile will go
     private TextView tvPhotoEdit;
     private TextView tvInfoEdit;
     private TextView tvAddVehicle;
+    private TextView tvBio;
+
     private ImageView ivProfPic;
 
     private BottomNavigationView bottomNavigationView;
@@ -52,6 +55,8 @@ This is where the profile will go
         tvPhotoEdit = (TextView) findViewById(R.id.tvPhotoEdit);
         tvInfoEdit = (TextView) findViewById(R.id.tvInfoEdit);
         tvAddVehicle = (TextView) findViewById(R.id.tvAddVehicle);
+        tvBio = (TextView) findViewById(R.id.tvBio);
+
         ivProfPic = (ImageView) findViewById(R.id.ivProfPic);
 
         storageReference = FirebaseStorage.getInstance().getReference();
@@ -73,6 +78,15 @@ This is where the profile will go
                 startActivity(new Intent(getApplicationContext(), AddVehicle.class));
             }
         });
+
+        tvBio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), EditBio.class));
+            }
+        });
+
+
 
         Menu menu = bottomNavigationView.getMenu();
         MenuItem menuItem = menu.getItem(3);
@@ -109,10 +123,7 @@ This is where the profile will go
             }
 
         });
-
     }
-
-
 
     @Override
     protected void onActivityResult (int requestCode, int resultCode, Intent intent){

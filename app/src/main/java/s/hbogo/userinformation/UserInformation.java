@@ -16,6 +16,10 @@ What stuff can be saved to a user profile
 
     Vehicle vehicle; //not included in constructor
 
+
+
+    String bio;
+
     public String getFirstName() {
         return firstName;
     }
@@ -49,6 +53,7 @@ What stuff can be saved to a user profile
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
         this.vehicle = null;
+        this.bio = null;
     }
 
 
@@ -60,5 +65,12 @@ What stuff can be saved to a user profile
         this.vehicle = vehicle;
     }
 
+    public String getBio() {
+        return bio;
+    }
+
+    public void setBio(String bio) {
+        this.bio = bio;
+    }
 
 }

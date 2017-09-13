@@ -40,7 +40,12 @@
         <activity
             android:name=".Vehicle.AddVehicle"
             android:label="@string/title_activity_add_vehicle"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Trip.AddTrip"
+            android:label="@string/title_activity_add_trip"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".userinformation.EditBio"></activity>
     </application>
 
 </manifest>
