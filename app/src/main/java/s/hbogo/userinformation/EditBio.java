@@ -31,7 +31,6 @@ public class EditBio extends AppCompatActivity {
         etBio = (EditText) findViewById(R.id.etBio);
         btnBioSave = (Button) findViewById(R.id.btnBioSave);
 
-        testtest
 
         firebaseAuth = FirebaseAuth.getInstance();
         databaseReference = FirebaseDatabase.getInstance().getReference();
