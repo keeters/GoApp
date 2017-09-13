@@ -1,4 +1,4 @@
-package s.hbogo.Vehicle;
+package s.hbogo.vehicle;
 
 /**
  * Created by silas on 9/2/17.

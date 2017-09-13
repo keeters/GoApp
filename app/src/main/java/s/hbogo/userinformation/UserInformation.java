@@ -1,6 +1,6 @@
 package s.hbogo.userinformation;
 
-import s.hbogo.Vehicle.Vehicle;
+import s.hbogo.vehicle.Vehicle;
 
 /**
  * Created by silas on 9/1/17.
@@ -14,7 +14,7 @@ What stuff can be saved to a user profile
     String lastName;
     String phoneNumber;
 
-    
+
     Vehicle vehicle; //not included in constructor
 
 

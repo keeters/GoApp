@@ -1,7 +1,6 @@
-package s.hbogo.Trip;
+package s.hbogo.trip;
 
 import android.location.Location;
-import android.text.style.TtsSpan;
 
 import java.util.Date;
 

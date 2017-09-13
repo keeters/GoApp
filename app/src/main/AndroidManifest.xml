@@ -38,16 +38,16 @@
             android:label="@string/title_activity_profile"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Vehicle.AddVehicle"
+            android:name=".vehicle.AddVehicle"
             android:label="@string/title_activity_add_vehicle"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Trip.AddTrip"
+            android:name=".trip.AddTrip"
             android:label="@string/title_activity_add_trip"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".userinformation.EditBio" />
-        <activity android:name=".Rating.AddRating" />
-        <activity android:name=".Rating.Report"></activity>
+        <activity android:name=".rating.AddRating" />
+        <activity android:name=".rating.Report"></activity>
     </application>
 
 </manifest>

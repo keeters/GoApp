@@ -1,4 +1,4 @@
-package s.hbogo.Rating;
+package s.hbogo.rating;
 
 /**
  * Created by silas on 9/13/17.
