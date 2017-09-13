@@ -1,5 +1,7 @@
 package s.hbogo.userinformation;
 
+import s.hbogo.Vehicle.Vehicle;
+
 /**
  * Created by silas on 9/1/17.
  */
@@ -12,6 +14,7 @@ What stuff can be saved to a user profile
     String lastName;
     String phoneNumber;
 
+    Vehicle vehicle; //not included in constructor
 
     public String getFirstName() {
         return firstName;
@@ -41,14 +44,21 @@ What stuff can be saved to a user profile
     public UserInformation() {
     }
 
-
     public UserInformation(String firstName, String lastName, String phoneNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
+        this.vehicle = null;
     }
 
 
+    public Vehicle getVehicle() {
+        return vehicle;
+    }
+
+    public void setVehicle(Vehicle vehicle) {
+        this.vehicle = vehicle;
+    }
 
 
 }

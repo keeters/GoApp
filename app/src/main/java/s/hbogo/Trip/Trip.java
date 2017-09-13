@@ -10,8 +10,9 @@ import java.util.Date;
  */
 
 public class Trip {
+
 /*
-What an individual trip will look like
+What an individual trip will look like.  This will make it easy to upload into Firebase database
  */
     Location start;
     Location destination;
@@ -21,12 +22,27 @@ What an individual trip will look like
 
     Date date;
 
-    public Trip(Location start, Location destination, Integer seats, Integer bags, Date date) {
+    Short rideType; //make sure to make 2 final static shorts in the make a ride thing
+
+
+    public Trip(Location start, Location destination, Integer seats, Integer bags, Date date, Short rideType) {
         this.start = start;
         this.destination = destination;
+
         this.seats = seats;
         this.bags = bags;
+
         this.date = date;
+
+        this.rideType = rideType;
+    }
+
+    public Short getRideType() {
+        return rideType;
+    }
+
+    public void setRideType(Short rideType) {
+        this.rideType = rideType;
     }
 
     public Location getStart() {

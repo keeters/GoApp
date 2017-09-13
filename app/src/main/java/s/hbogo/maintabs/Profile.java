@@ -12,6 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,6 +22,7 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 import s.hbogo.R;
+import s.hbogo.Vehicle.AddVehicle;
 
 import static android.R.attr.data;
 import static android.R.id.content;
@@ -33,9 +35,11 @@ This is where the profile will go
     private TextView tvPhotoEdit;
     private TextView tvInfoEdit;
     private TextView tvAddVehicle;
+    private ImageView ivProfPic;
 
     private BottomNavigationView bottomNavigationView;
 
+    private StorageReference storageReference;
 
     private static final int GALLERY_INTENT = 2;
 
@@ -48,7 +52,9 @@ This is where the profile will go
         tvPhotoEdit = (TextView) findViewById(R.id.tvPhotoEdit);
         tvInfoEdit = (TextView) findViewById(R.id.tvInfoEdit);
         tvAddVehicle = (TextView) findViewById(R.id.tvAddVehicle);
+        ivProfPic = (ImageView) findViewById(R.id.ivProfPic);
 
+        storageReference = FirebaseStorage.getInstance().getReference();
 
         tvPhotoEdit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +64,13 @@ This is where the profile will go
                 intent.setType("image/*");
 
                 startActivityForResult(intent, GALLERY_INTENT);
+            }
+        });
+
+        tvAddVehicle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), AddVehicle.class));
             }
         });
 
@@ -100,12 +113,11 @@ This is where the profile will go
     }
 
 
-    /*
-    This code is good code for being able to upload rides later as it just uses the firebase database,
-    but its not how to upload profile pictures to a specific user
 
     @Override
     protected void onActivityResult (int requestCode, int resultCode, Intent intent){
+        //This doesn't work as it uploads to the database and not to a user profile
+
         super.onActivityResult(requestCode, resultCode, intent);
 
         if( requestCode == GALLERY_INTENT && resultCode == RESULT_OK){
@@ -125,6 +137,5 @@ This is where the profile will go
 
         }
     }
-*/
 
 }
