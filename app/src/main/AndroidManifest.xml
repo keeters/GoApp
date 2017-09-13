@@ -45,7 +45,9 @@
             android:name=".Trip.AddTrip"
             android:label="@string/title_activity_add_trip"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".userinformation.EditBio"></activity>
+        <activity android:name=".userinformation.EditBio" />
+        <activity android:name=".Rating.AddRating" />
+        <activity android:name=".Rating.Report"></activity>
     </application>
 
 </manifest>

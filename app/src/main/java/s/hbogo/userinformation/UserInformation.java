@@ -14,6 +14,7 @@ What stuff can be saved to a user profile
     String lastName;
     String phoneNumber;
 
+    
     Vehicle vehicle; //not included in constructor
 
 

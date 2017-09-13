@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:orientation="vertical"
+    tools:context="s.hbogo.Rating.AddRating">
+
+    <RatingBar
+        android:id="@+id/rbReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numStars="5"/>
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add Description"/>
+
+    <Button
+        android:id="@+id/btnGiveRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Give Rating"/>
+
+    <TextView
+        android:id="@+id/tvReport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Report this user"/>
+
+</LinearLayout>
