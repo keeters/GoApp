@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import s.hbogo.R;
 
-public class AddTrip extends AppCompatActivity {
+public class AddTripDrive extends AppCompatActivity {
 
     final public short RIDE = 0;
     final public short DRIVE = 1; //So with these, as soon as a user selects the rides fragment

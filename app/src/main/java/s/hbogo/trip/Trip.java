@@ -2,6 +2,7 @@ package s.hbogo.trip;
 
 import android.location.Location;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -21,6 +22,8 @@ What an individual trip will look like.  This will make it easy to upload into F
 
     Date date;
 
+    ArrayList<Offer> offers;
+
     public Short rideType; //make sure to make 2 final static shorts in the make a ride thing
 
 
@@ -34,6 +37,7 @@ What an individual trip will look like.  This will make it easy to upload into F
         this.date = date;
 
         this.rideType = rideType;
+        this.offers = null;
     }
 
     public Short getRideType() {

@@ -42,12 +42,14 @@
             android:label="@string/title_activity_add_vehicle"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".trip.AddTrip"
+            android:name=".trip.AddTripDrive"
             android:label="@string/title_activity_add_trip"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".userinformation.EditBio" />
         <activity android:name=".rating.AddRating" />
-        <activity android:name=".rating.Report"></activity>
+        <activity android:name=".rating.Report" />
+        <activity android:name=".trip.AddTripRide" />
+        <activity android:name=".trip.AddOffer"></activity>
     </application>
 
 </manifest>
