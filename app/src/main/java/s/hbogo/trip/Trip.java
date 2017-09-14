@@ -32,7 +32,6 @@ What an individual trip will look like.  This will make it easy to upload into F
         this.destination = destination;
 
         this.seats = seats;
-        this.bags = bags;
 
         this.date = date;
 

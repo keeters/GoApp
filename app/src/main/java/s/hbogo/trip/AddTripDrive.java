@@ -7,13 +7,16 @@ import s.hbogo.R;
 
 public class AddTripDrive extends AppCompatActivity {
 
-    final public short RIDE = 0;
-    final public short DRIVE = 1; //So with these, as soon as a user selects the rides fragment
-    // or the drive fragement, we should change Trip.rideType to the apropriate short
+    private Short DRIVERIDETYPE;
+
+    //These need a map fragment probably that pops up and lets them choose a location
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_trip);
+        setContentView(R.layout.activity_add_trip_drive);
+
     }
+
+
 }
