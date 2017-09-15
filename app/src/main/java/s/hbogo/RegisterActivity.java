@@ -50,7 +50,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         setContentView(R.layout.activity_register);
 
         firebaseAuth = FirebaseAuth.getInstance();
-        databaseReference = FirebaseDatabase.getInstance().getReference();
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("Users");
         progressDialog = new ProgressDialog(this);
 
 
@@ -109,8 +109,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
                             loginUser(email, password);
                             addUserInformation();
-
-                            Log.v("Made it to Login", "Logolog");
 
                             startActivity(new Intent(getApplicationContext(), LoginActivity.class));
 

@@ -33,7 +33,8 @@ public class EditBio extends AppCompatActivity {
 
 
         firebaseAuth = FirebaseAuth.getInstance();
-        databaseReference = FirebaseDatabase.getInstance().getReference();
+        String userId = firebaseAuth.getCurrentUser().getUid();
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("Users").child(userId);
 
         final FirebaseUser user = firebaseAuth.getCurrentUser();
 
@@ -42,7 +43,7 @@ public class EditBio extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 final String stBio = etBio.getText().toString().trim();
-                databaseReference.child(user.getUid()).child("bio").setValue(stBio);
+                databaseReference.child("Bio").setValue(stBio);
                 startActivity(new Intent(getApplicationContext(), Profile.class));
             }
         });

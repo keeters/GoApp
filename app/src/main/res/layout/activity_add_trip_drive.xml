@@ -9,15 +9,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:weightSum="1">
+        android:orientation="vertical">
 
         <Button
+            android:id="@+id/btnAddStart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Add Start" />
 
         <Button
+            android:id="@+id/btnAddDestination"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Add Destination" />
@@ -30,6 +31,7 @@
 
 
         <DatePicker
+            android:id="@+id/dpRideDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.52" />
@@ -40,14 +42,16 @@
             android:orientation="horizontal">
 
             <CheckBox
+                android:id="@+id/cbAccountVehicle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Use vehicle on account" />
 
             <Button
+                android:id="@+id/btnChangeVehicle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Change vehicle" />
+                android:text="Use a different vehicle" />
         </LinearLayout>
 
         <TextView
@@ -56,8 +60,15 @@
             android:text="How many avaliable seats?" />
 
         <NumberPicker
+            android:id="@+id/npSeats"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etTripDescription"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:hint="Add a trip description"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -66,18 +77,19 @@
             android:weightSum="2">
 
             <Button
+                android:id="@+id/btnAddDrive"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Add drive" />
 
             <Button
+                android:id="@+id/btnCancel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Cancel" />
         </LinearLayout>
-
 
     </LinearLayout>
 

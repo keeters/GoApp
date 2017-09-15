@@ -4,9 +4,20 @@
     android:layout_height="match_parent"
     tools:context="s.hbogo.maintabs.myridesfragments.RiderFragment">
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="rider" />
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rider" />
+
+        <Button
+            android:id="@+id/btnGoAddRide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Ride" />
+    </LinearLayout>
 
 </ScrollView>

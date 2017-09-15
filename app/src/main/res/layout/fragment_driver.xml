@@ -5,9 +5,19 @@
     android:orientation="vertical"
     tools:context="s.hbogo.maintabs.myridesfragments.DriverFragment">
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="driver" />
+        android:layout_height="wrap_content">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="driver" />
+
+        <Button
+            android:id="@+id/btnGoAddDrive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Drive" />
+    </LinearLayout>
 </ScrollView>

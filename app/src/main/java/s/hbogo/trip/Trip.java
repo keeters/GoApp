@@ -3,7 +3,8 @@ package s.hbogo.trip;
 import android.location.Location;
 
 import java.util.ArrayList;
-import java.util.Date;
+
+import s.hbogo.vehicle.Vehicle;
 
 /**
  * Created by silas on 9/2/17.
@@ -11,40 +12,59 @@ import java.util.Date;
 
 public class Trip {
 
-/*
-What an individual trip will look like.  This will make it easy to upload into Firebase database
- */
+    /*
+    What an individual trip will look like.  This will make it easy to upload into Firebase database
+     */
     Location start;
     Location destination;
 
     Integer seats;
     Integer bags;
 
-    Date date;
+    String description;
+    String poster;
+
+    Integer day;
+    Integer month;
+    Integer year;
 
     ArrayList<Offer> offers;
 
-    public Short rideType; //make sure to make 2 final static shorts in the make a ride thing
+    private Integer DRIVERIDETYPE = 0;
+    public Integer RIDERIDETYPE = 1;
 
+    public Integer rideType;
+    Vehicle vehicle;
 
-    public Trip(Location start, Location destination, Integer seats, Integer bags, Date date, Short rideType) {
-        this.start = start;
-        this.destination = destination;
-
-        this.seats = seats;
-
-        this.date = date;
-
-        this.rideType = rideType;
-        this.offers = null;
+    public String getDescription() {
+        return description;
     }
 
-    public Short getRideType() {
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Trip() {
+    }
+
+    public String getPoster() {
+        return poster;
+    }
+
+    public void setPoster(String poster) {
+        this.poster = poster;
+    }
+
+    public Integer getRideType() {
         return rideType;
     }
 
-    public void setRideType(Short rideType) {
-        this.rideType = rideType;
+    public void setRideTypeRide() {
+        this.rideType = RIDERIDETYPE;
+    }
+
+    public void setRideTypeDrive() {
+        this.rideType = DRIVERIDETYPE;
     }
 
     public Location getStart() {
@@ -79,14 +99,37 @@ What an individual trip will look like.  This will make it easy to upload into F
         this.bags = bags;
     }
 
-    public Date getDate() {
-        return date;
+    public Vehicle getVehicle() {
+        return vehicle;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setVehicle(Vehicle vehicle) {
+        this.vehicle = vehicle;
     }
 
 
+    public Integer getDay() {
+        return day;
+    }
+
+    public void setDay(Integer day) {
+        this.day = day;
+    }
+
+    public Integer getMonth() {
+        return month;
+    }
+
+    public void setMonth(Integer month) {
+        this.month = month;
+    }
+
+    public Integer getYear() {
+        return year;
+    }
+
+    public void setYear(Integer year) {
+        this.year = year;
+    }
 
 }
