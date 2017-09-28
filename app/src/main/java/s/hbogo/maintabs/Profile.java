@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
@@ -36,6 +37,7 @@ This is where the profile will go
 
     private BottomNavigationView bottomNavigationView;
 
+    private FirebaseAuth firebaseAuth;
     private StorageReference storageReference;
 
     private static final int GALLERY_INTENT = 2;
@@ -54,6 +56,7 @@ This is where the profile will go
         ivProfPic = (ImageView) findViewById(R.id.ivProfPic);
 
         storageReference = FirebaseStorage.getInstance().getReference();
+        firebaseAuth = FirebaseAuth.getInstance();
 
         tvPhotoEdit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -129,7 +132,9 @@ This is where the profile will go
 
             Uri uri = intent.getData();
 
-            StorageReference filePath = storageReference.child("Photos").child(uri.getLastPathSegment());
+            StorageReference filePath = storageReference.child("Photos").
+                    child(firebaseAuth.getCurrentUser().getUid());
+
 
             filePath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                 @Override

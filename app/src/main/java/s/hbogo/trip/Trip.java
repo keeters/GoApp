@@ -15,8 +15,10 @@ public class Trip {
     /*
     What an individual trip will look like.  This will make it easy to upload into Firebase database
      */
-    Location start;
-    Location destination;
+    String start; //we might need to change these to locations but that's ok
+
+
+    String destination;
 
     Integer seats;
     Integer bags;
@@ -35,6 +37,12 @@ public class Trip {
 
     public Integer rideType;
     Vehicle vehicle;
+
+
+    public Trip(String start, String destination) { //Test thingy
+        this.start = start;
+        this.destination = destination;
+    }
 
     public String getDescription() {
         return description;
@@ -67,19 +75,19 @@ public class Trip {
         this.rideType = DRIVERIDETYPE;
     }
 
-    public Location getStart() {
+    public String getStart() {
         return start;
     }
 
-    public void setStart(Location start) {
+    public void setStart(String start) {
         this.start = start;
     }
 
-    public Location getDestination() {
+    public String getDestination() {
         return destination;
     }
 
-    public void setDestination(Location destination) {
+    public void setDestination(String destination) {
         this.destination = destination;
     }
 
